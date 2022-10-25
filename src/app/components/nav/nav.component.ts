@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+// Router -> responsável por executar a navegação do projeto
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -8,9 +11,11 @@ import { Component, OnInit } from '@angular/core';
 
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
+  // Executa no ato da renderização do component
   ngOnInit(): void {
+    this.router.navigate(['home']);
   }
 
 }
