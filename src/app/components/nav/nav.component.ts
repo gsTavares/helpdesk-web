@@ -15,7 +15,7 @@ export class NavComponent implements OnInit {
 
   // Executa no ato da renderização do component
   ngOnInit(): void {
-    this.router.navigate(['home']);
+    this.router.navigate(['tecnicos']);
   }
 
 }
