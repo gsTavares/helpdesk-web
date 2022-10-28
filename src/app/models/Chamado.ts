@@ -9,5 +9,5 @@ export interface Chamado {
     tecnico: any,
     cliente: any,
     nomeCliente: string,
-    nomeTecnico: string
+    nomeTecnico: string 
 }
